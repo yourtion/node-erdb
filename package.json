@@ -1,0 +1,38 @@
+{
+  "name": "erdb",
+  "version": "0.1.0",
+  "description": "simple mysql with db query",
+  "keywords": [
+    "mysql",
+    "rdb",
+    "rds",
+    "simple-mysql"
+  ],
+  "author": "YourtionGuo <yourtion@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typing": "dist/index.d.ts",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js"
+  ],
+  "scripts": {
+    "pretest": "npm run lint && tsc",
+    "tag": "git tag v`node -p 'require(\"./package\").version'`",
+    "lint": "tslint --project tsconfig.json --fix",
+    "clean": "rm -rf dist",
+    "compile": "tsc",
+    "prepublishOnly": "npm run clean && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourtion/node-erdb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourtion/node-erdb/issues"
+  },
+  "homepage": "https://github.com/yourtion/node-erdb#readme",
+  "devDependencies": {
+    "typescript": "^2.9.1"
+  }
+}
