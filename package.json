@@ -1,6 +1,6 @@
 {
   "name": "erdb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "simple mysql with db query",
   "keywords": [
     "mysql",
@@ -14,6 +14,7 @@
   "typing": "dist/index.d.ts",
   "files": [
     "dist/index.d.ts",
+    "dist/index.d.ts.map",
     "dist/index.js"
   ],
   "scripts": {
