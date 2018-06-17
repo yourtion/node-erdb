@@ -13,9 +13,9 @@
   "main": "dist/index.js",
   "typing": "dist/index.d.ts",
   "files": [
-    "dist/index.d.ts",
-    "dist/index.d.ts.map",
-    "dist/index.js"
+    "dist/*.d.ts",
+    "dist/*.d.ts.map",
+    "dist/*.js"
   ],
   "scripts": {
     "pretest": "npm run lint && tsc",
@@ -34,6 +34,11 @@
   },
   "homepage": "https://github.com/yourtion/node-erdb#readme",
   "devDependencies": {
+    "@types/node": "^10.3.3",
     "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "@types/mysql": "^2.15.5",
+    "mysql": "^2.15.0"
   }
 }
