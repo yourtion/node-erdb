@@ -13,7 +13,6 @@ export default class Connection extends Operator {
     if (values) {
       sql = this.format(sql, values);
     }
-    // debug('query %j', sql);
     return this.conn.queryAsync(sql);
   }
 
@@ -22,14 +21,14 @@ export default class Connection extends Operator {
   }
 
   public beginTransaction() {
-    return this.conn.beginTransaction();
+    return this.conn.beginTransactionAsync();
   }
 
   public commit() {
-    return this.conn.commit();
+    return this.conn.commitAsync();
   }
 
   public rollback() {
-    return this.conn.rollback();
+    return this.conn.rollbackAsync();
   }
 }
