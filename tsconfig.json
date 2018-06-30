@@ -5,9 +5,10 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "declarationMap": true,
     "declaration": true,
     "strict": true,
-    "target": "es6"
+    "target": "esnext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   }
 }
