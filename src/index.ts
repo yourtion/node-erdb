@@ -6,6 +6,11 @@ import Transaction from "./transaction";
 
 const Pool = require("mysql/lib/Pool");
 
+export * from "./literal";
+export * from "./operator";
+export * from "./connection";
+export * from "./transaction";
+
 export type TransactionScope = (tran: Transaction) => Promise<any>;
 export interface ITransactionCTX {
   _transactionConnection?: Transaction | null;
